@@ -23,4 +23,8 @@ public class SavingsAccount extends Account{
 	public void updatebalance() {
 		balance += balance * interstRate;
 	}
+	@Override
+	public void wihtdraw(double amont) {
+		balance -= amont;
+	}
 }
