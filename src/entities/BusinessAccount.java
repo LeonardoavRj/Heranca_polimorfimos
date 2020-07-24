@@ -22,7 +22,7 @@ public class BusinessAccount extends Account {
 	}
 	public void loan (double amont) {
 		if (amont <= loanLimit) {
-			deposit(amont);
+			balance += amont - 10.0;
 		}
 	}
 }
